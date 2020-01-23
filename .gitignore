@@ -1,0 +1,7 @@
+boomerang/build
+boomerang/node_modules
+main_app/__pycache__
+main_app/Sentiment_LSTM_model.h5
+twitter_django/__pycache__
+db.sqlite3
+requirements.txt
