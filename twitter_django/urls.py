@@ -18,10 +18,10 @@ from django.urls import path, include
 from main_app import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
 
     path('', views.homepage),
-    path('accounts/', include('accounts.urls')),
+
     
     path('getsentiment', views.getsentiment),
     path('analyzehashtag', views.analyzehashtag),

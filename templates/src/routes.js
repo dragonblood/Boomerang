@@ -1,12 +1,11 @@
 import Dashboard from "views/Dashboard.jsx";
 import Boomerang from "views/Boomerang.jsx";
-import accounts from "views/accounts/log_in.html";
 import Icons from "views/Icons.jsx";
 import Map from "views/Map.jsx";
 import Notifications from "views/Notifications.jsx";
 import TableList from "views/TableList.jsx";
 import Typography from "views/Typography.jsx";
-import UserProfile from "views/accounts/UserProfile.jsx";
+import UserProfile from "views/UserProfile.jsx";
 
 var routes = [
   // {
@@ -23,13 +22,6 @@ var routes = [
     component: Boomerang,
     layout: "/admin"
   },
-  {
-    path: "/templates",
-    name: "accounts",
-    icon: "tim-icons icon-atom",
-    component: accounts,
-    layout: "/admin"
-  }
   // {
   //   path: "/icons",
   //   name: "Icons",
