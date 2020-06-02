@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boomerang</title>
+
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <link herf="https://fonts.googleapis.com/css2?family=VT323&display=swap" />
+
+    <!-- @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Ruluko&display=swap");
+        @import url("css/bootstrap.min.css"); -->
+</head>
+
+<body>
+    <!-- Main Grid -->
+    <div class="grid-container">
+        <div class="left-space"></div>
+        <div class="right-space"></div>
+        <div class="main">
+            <div class="main-title">
+                <h1 class="big-white">Text Analysis</h1>
+            </div>
+            <div class="main-textarea">
+                <div class="wrap-input100 validate-input" data-validate="Please enter your message">
+                    <textarea class="input100" name="message" placeholder="Your Text"></textarea>
+                    <span class="focus-input100"></span>
+                </div>
+                <a href="#" class="btn yellow rounded">Button</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Backgroud -->
+    <div id="background-wrap">
+        <div class="x1">
+            <div class="cloud"></div>
+        </div>
+        <div class="x2">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x3">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x4">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x5">
+            <div class="cloud"></div>
+        </div>
+    </div>
+</body>
+
+</html>

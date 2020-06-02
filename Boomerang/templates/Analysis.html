@@ -1,0 +1,233 @@
+{% load static %} {% load bootstrap4 %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome5-overrides.min.css' %}" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <div class="d-flex flex-column bg-dark" id="content-wrapper">
+            <div id="content">
+                <div class="container-fluid">
+                    <!-- Start: Header -->
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <h1 class="text-white mb-0">Text Analysis Dashboard</h1>
+                    </div>
+                    <!-- End: Header -->
+                    <!-- Start: PieChart -->
+                    <div class="row">
+                        <div class="col-lg-7 col-xl-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h6 class="text-primary font-weight-bold m-0">
+                                        Overall Sentiment
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas data-bs-chart='{"type":"doughnut","data":{"labels":["Neutral","Positive","Negative"],"datasets":[{"label":"Sentiment","backgroundColor":["rgb(231,74,59)","rgb(28,200,138)","rgb(78,115,223)"],"borderColor":["rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],"data":["-1","1","0.1"]}]},"options":{"maintainAspectRatio":false,"legend":{"display":false,"position":"bottom"},"title":{}}}'></canvas>
+                                    </div>
+                                    <div class="text-center small mt-4">
+                                        <span class="mr-2">
+                        <i class="fa fa-circle text-success"></i>
+                        &nbsp;Positive</span
+                      >
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-primary"></i>
+                        &nbsp;Neutral</span
+                      >
+                      <span class="mr-2">
+                        <i class="fa fa-circle text-danger"></i>
+                        &nbsp; Negative</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End: Chart -->
+              <!-- Start: Text -->
+              <div class="col-lg-5 col-xl-8 offset-xl-0">
+                <div class="card shadow mb-4">
+                  <div
+                    class="card-header d-flex justify-content-between align-items-center"
+                  >
+                    <h6 class="text-primary font-weight-bold m-0">
+                      Your text or News&nbsp;
+                    </h6>
+                  </div>
+                  <div class="card-body scroll_row1">
+                    <p>
+                      フィンセント・ファン・ゴッホ（Vincent van
+                      Gogh、1853年3月30日 -
+                      1890年7月29日）は、オランダ出身でポスト印象派（後期印象派）の画家。主要作品の多くは1886年以降のフランス居住時代、特に、アルル時代とサン＝レミの精神病院での療養時代に制作された。彼の作品は感情の率直な表現、大胆な色使いで知られ、ポスト印象派の代表的画家である。フォーヴィスムやドイツ表現主義など、20世紀の美術にも大きな影響を及ぼしたとを決意した
+                      1853年、オランダ南部のズンデルトで牧師の家に生まれる。1869年、画商グーピル商会に勤め始め、ハーグ、ロンドン、パリで働くが、1876年、商会を解雇された。その後イギリスで教師として働いたりオランダのドルトレヒトの書店で働いたりするうちに聖職者を志すようになり、1877年、アムステルダムで神学部の受験勉強を始めるが挫折した。1878年末以降、ベルギーの炭坑地帯ボリナージュ地方で伝道活動を行ううち、画家を目指すことを決意した
+                      佐野
+                      文子は、日本の社会運動家、社会事業家。北海道旭川市で明治時代から昭和時代にかけて活動した人物であり、日本キリスト教婦人矯風会旭川支部における戦前の廃娼運動、戦中の内閣総理大臣・東條英機の秘書としての活動などの戦争協力、戦後の保護司としての刑余者の援助活動などで知られる……
+                      津田
+                      応助は、愛知県の郷土史家、教育者、皇漢学者。應助とも表記される。号は象山。愛知県東春日井郡小牧町大字小牧字山東（現在の小牧市小牧5丁
+                      アルゼンチンワインは、南アメリカのアルゼンチンで生産されるワイン。2013年のアルゼンチンのブドウ生産量は世界第6位、ワイン生産量は世界第5位だった。主要なワイン産地は標高が高くて湿度が低井郡小牧町大字小牧字山東（現在の小牧市小牧5丁目）に生まれる。愛知県を代表する在野の郷土史家であり、また私塾象山義塾の設立者としても知られる）に生まれる。愛知県を代表する在野の郷土史家であり、また私塾象山義塾の設立者としても知られる
+                      目）に生まれる。愛知県を代表する在野の郷土史家であり、また私塾象山義塾の設立者としても知られる目）に生まれる。愛知県を代表する在野の郷土史家であり、また私塾象山義塾の設立者としても知られる目）に生まれる。愛知県を代表する在野の郷土史家であり、また私塾象山義塾の設立者としても知られる目）に生まれる。愛知県を代表する在野の郷土史家であり、また私塾象山義塾の設立者としても知られる目）に生まれる。愛知県を代表する在野の
+                      郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私
+                      フィンセント・ファン・ゴッホ（Vincent van
+                      Gogh、1853年3月30日 -
+                      1890年7月29日）は、オランダ出身でポスト印象派（後期印象派）の画家。主要作品の多くは1886年以降のフランス居住時代、特に、アルル時代とサン＝レミの精神病院での療養時代に制作された。彼の作品は感情の率直な表現、大胆な色使いで知られ、ポスト印象派の代表的画家である。フォーヴィスムやドイツ表現主義など、20世紀の美術にも大きな影響を及ぼしたとを決意した
+                      1853年、オランダ南部のズンデルトで牧師の家に生まれる。1869年、画商グーピル商会に勤め始め、ハーグ、ロンドン、パリで働くが、1876年、商会を解雇された。その後イギリスで教師として働いたりオランダのドルトレヒトの書店で働いたりするうちに聖職者を志すようになり、1877年、アムステルダムで神学部の受験勉強を始めるが挫折した。1878年末以降、ベルギーの炭坑地帯ボリナージュ地方で伝道活動を行ううち、画家を目指すことを決意した
+                      佐野
+                      文子は、日本の社会運動家、社会事業家。北海道旭川市で明治時代から昭和時代にかけて活動した人物であり、日本キリスト教婦人矯風会旭川支部における戦前の廃娼運動、戦中の内閣総理大臣・東條英機の秘書としての活動などの戦争協力、戦後の保護司としての刑余者の援助活動などで知られる……
+                      津田
+                      応助は、愛知県の郷土史家、教育者、皇漢学者。應助とも表記される。号は象山。愛知県東春日井郡小牧町大字小牧字山東（現在の小牧市小牧5丁
+                      アルゼンチンワインは、南アメリカのアルゼンチンで生産されるワイン。2013年のアルゼンチンのブドウ生産量は世界第6位、ワイン生産量は世界第5位だった。主要なワイン産地は標高が高くて湿度が低井郡小牧町大字小牧字山東（現在の小牧市小牧5丁目）に生まれる。愛知県を代表する在野の郷土史家であり、また私塾象山義塾の設立者としても知られる）に生まれる。愛知県を代表する在野の郷土史家であり、また私塾象山義塾の設立者としても知られる
+                      目）に生まれる。愛知県を代表する在野の郷土史家であり、また私塾象山義塾の設立者としても知られる目）に生まれる。愛知県を代表する在野の郷土史家であり、また私塾象山義塾の設立者としても知られる目）に生まれる。愛知県を代表する在野の郷土史家であり、また私塾象山義塾の設立者としても知られる目）に生まれる。愛知県を代表する在野の郷土史家であり、また私塾象山義塾の設立者としても知られる目）に生まれる。愛知県を代表する在野の
+                      郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私塾象山義塾の設立者としても知られる郷土史家であり、また私
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Start: BarChart -->
+            <div class="row">
+              <div class="col-lg-6 col-xl-4 mb-4">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="text-primary font-weight-bold m-0">Topics</h6>
+                  </div>
+                  <div class="card-body scroll_row2">
+                    <div>
+                      <canvas
+                        data-bs-chart='{"type":"horizontalBar","data":{"labels":["January","February","March","April","May"],"datasets":[{"label":"Revenue","backgroundColor":"#4e73df","borderColor":"#4e73df","data":["4500","5300","6250","7800","9800"]}]},"options":{"maintainAspectRatio":true,"legend":{"display":false,"position":"top"},"title":{},"scales":{"xAxes":[{"gridLines":{"color":"rgba(248,248,248,0)","zeroLineColor":"rgba(248,248,248,0)","drawBorder":false,"drawTicks":false,"drawOnChartArea":false},"ticks":{"beginAtZero":false}}],"yAxes":[{"gridLines":{"color":"rgba(248,248,248,0)","zeroLineColor":"rgba(248,248,248,0)","drawBorder":false,"drawTicks":false,"drawOnChartArea":false},"ticks":{"beginAtZero":false}}]}}}'
+                      ></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-8">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="text-primary font-weight-bold m-0">
+                      Sentiment by tweets or sentences
+                    </h6>
+                  </div>
+                  <ul class="list-group list-group-flush scroll_row2">
+                    <li class="list-group-item">
+                      <div class="row align-items-center no-gutters">
+                        <div class="col mr-2">
+                          <h6 class="mb-0">
+                            <strong>In case of tweet Name</strong>
+                          </h6>
+                          <span class="text-xs">Im happy</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="card text-white bg-success shadow">
+                                            <div class="card-body">
+                                                <p class="m-0">Pos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col mr-2">
+                                            <h6 class="mb-0"><strong>Sentence</strong></h6>
+                                            <span class="text-xs">There is cow in my room</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="card text-white bg-primary shadow">
+                                                <div class="card-body">
+                                                    <p class="m-0">Neu</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col mr-2">
+                                            <h6 class="mb-0"><strong>idk</strong></h6>
+                                            <span class="text-xs">There is freaking cow in my room!</span
+                          >
+                        </div>
+                        <div class="col-auto">
+                          <div class="card text-white bg-danger shadow">
+                            <div class="card-body">
+                              <p class="m-0">Neg</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row align-items-center no-gutters">
+                        <div class="col mr-2">
+                          <h6 class="mb-0">
+                            <strong>In case of tweet Name</strong>
+                          </h6>
+                          <span class="text-xs">Im happy</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="card text-white bg-success shadow">
+                                                <div class="card-body">
+                                                    <p class="m-0">Pos</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col mr-2">
+                                            <h6 class="mb-0"><strong>Sentence</strong></h6>
+                                            <span class="text-xs">There is cow in my room</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="card text-white bg-primary shadow">
+                                                <div class="card-body">
+                                                    <p class="m-0">Neu</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col mr-2">
+                                            <h6 class="mb-0"><strong>idk</strong></h6>
+                                            <span class="text-xs">There is freaking cow in my room!</span
+                          >
+                        </div>
+                        <div class="col-auto">
+                          <div class="card text-white bg-danger shadow">
+                            <div class="card-body">
+                              <p class="m-0">Neg</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="{% static 'js/script.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  </body>
+</html>
