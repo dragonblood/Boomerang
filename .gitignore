@@ -2,3 +2,4 @@ db.sqlite3
 Boomerang/__pycache__/
 Boomerang/migrations/
 main/__pycache__
+IGNR/key.json

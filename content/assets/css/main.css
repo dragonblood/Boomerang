@@ -13,16 +13,6 @@ body {
     padding: 0; */
 }
 
-.scroll_row1 {
-    max-height: 450px;
-    overflow-y: auto;
-}
-
-.scroll_row2 {
-    max-height: 375px;
-    overflow-y: auto;
-}
-
 
 /* ############################||| enterText: Main (Text and Box) |||############################*/
 

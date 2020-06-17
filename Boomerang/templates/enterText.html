@@ -21,37 +21,41 @@
             <div class="main-title">
                 <h1 class="big-white">Text Analysis</h1>
             </div>
-            <div class="main-textarea">
-                <div class="wrap-input100 validate-input" data-validate="Please enter your message ">
-                    <textarea class="input100" name="message " placeholder="Your Text "></textarea>
-                    <span class="focus-input100"></span>
+            <form method="post">
+                {% csrf_token %}
+                <div class="main-textarea">
+                    <div class="wrap-input100 validate-input" data-validate="Please enter your message ">
+                        <textarea class="input100" name="text" placeholder="Your Text"></textarea>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <input name="submittext" type="submit" value="Analysis" class="btn yellow rounded">
+                    <a href="{% url 'Analysis'%}"><input type="button" value="Move" class="btn yellow rounded"></a>
                 </div>
-                <a href="{% url 'Analysis' %} " class="btn yellow rounded">Analysis</a
-          >
+            </form>
         </div>
-      </div>
     </div>
 
     <!-- Backgroud -->
     <div id="background-wrap ">
-      <div class="x1">
-        <div class="cloud"></div>
-      </div>
-      <div class="x2">
-        <div class="cloud"></div>
-      </div>
+        <div class="x1">
+            <div class="cloud"></div>
+        </div>
+        <div class="x2">
+            <div class="cloud"></div>
+        </div>
 
-      <div class="x3">
-        <div class="cloud"></div>
-      </div>
+        <div class="x3">
+            <div class="cloud"></div>
+        </div>
 
-      <div class="x4">
-        <div class="cloud"></div>
-      </div>
+        <div class="x4">
+            <div class="cloud"></div>
+        </div>
 
-      <div class="x5">
-        <div class="cloud"></div>
-      </div>
+        <div class="x5">
+            <div class="cloud"></div>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
