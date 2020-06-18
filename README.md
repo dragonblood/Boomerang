@@ -1,5 +1,3 @@
-# Project is unfinished, stuff do not work as intended...
-
 # Boomerang
 ## 1. About:
 
@@ -9,9 +7,7 @@
 ```
 git clone https://github.com/dragonblood/Boomerang.git
 cd Boomerang
-
-#todo
-    conda env create --file Boomerang.yml // make yml file
+conda env create --file Boomerang.yml // make yml file
 conda activate Boomerang
 python manage.py makemigrations
 python manage.py migrate
