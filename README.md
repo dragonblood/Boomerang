@@ -7,7 +7,7 @@
 ```
 git clone https://github.com/dragonblood/Boomerang.git
 cd Boomerang
-conda env create --file Boomerang.yml // make yml file
+conda env create --file Boomerang.yml
 conda activate Boomerang
 python manage.py makemigrations
 python manage.py migrate
@@ -15,7 +15,7 @@ python manage.py runserver
 ```
 ## 3. Screenshots
 | Initial Screen | Dashboard |
-| --------------|-----------------|
+|----------------|-----------|
 |<img src="https://github.com/dragonblood/Boomerang/blob/master/pics/Screenshot%20from%202020-06-19%2002-49-51.png"/>|<img src="https://github.com/dragonblood/Boomerang/blob/master/pics/Screenshot%20from%202020-06-19%2002-49-04.png"/>|
 
 ### Please Feel Free to raise an issue.
