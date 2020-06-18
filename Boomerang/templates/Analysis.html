@@ -92,7 +92,7 @@
                             <div class="card shadow mb-4">
                                 <div class="card-header header-color d-flex justify-content-between align-items-center">
                                     <h6 class="font-weight-bold m-0">
-                                        Your text or News
+                                        News
                                     </h6>
                                 </div>
                                 <div class="card-body scroll_row1">
@@ -108,7 +108,7 @@
                         <div class="col-lg-6 col-xl-4 mb-4">
                             <div class="card shadow mb-4">
                                 <div class="card-header header-color">
-                                    <h6 class="font-weight-bold m-0">Topics</h6>
+                                    <h6 class="font-weight-bold m-0">Entities</h6>
                                 </div>
                                 <div class="card-body scroll_row2">
                                     <div>
@@ -121,7 +121,7 @@
                             <div class="card shadow mb-4">
                                 <div class="card-header header-color">
                                     <h6 class="font-weight-bold m-0">
-                                        Sentiment by tweets or sentences
+                                        Sentiment breakdown by sentences
                                     </h6>
                                 </div>
                                 <ul class="list-group list-group-flush scroll_row2">
@@ -130,30 +130,30 @@
                                         <div class="row align-items-center no-gutters">
                                             <div class="col mr-2">
                                                 <h6 class="mb-0">
-                                                    <strong>In case of tweet Name</strong>
+                                                    <strong>{{sentence.text.content}}</strong>
                                                 </h6>
-                                                <span class="text-xs">{{sentence.text.content}}</span>
+                                                <span class="text-xs">-</span>
                                             </div>
                                             <div class="col-auto">
 
                                                 {% if -0.2 > sentence.sentiment.score %}
                                                 <div class="card bg-danger text-white shadow">
                                                     <div class="card-body">
-                                                        <p class="m-0">negative</p>
+                                                        <p class="m-0">Negative</p>
                                                     </div>
                                                 </div>
 
                                                 {% elif 0.2 < sentence.sentiment.score %}
                                                 <div class="card bg-success text-white shadow">
                                                     <div class="card-body">
-                                                        <p class="m-0">positive</p>
+                                                        <p class="m-0">Positive</p>
                                                     </div>
                                                 </div>
 
                                                 {% else %}
                                                 <div class="card bg-warning text-white shadow">
                                                     <div class="card-body">
-                                                        <p class="m-0">neutral</p>
+                                                        <p class="m-0">Neutral</p>
                                                     </div>
                                                 </div>
                                                 {% endif %}
@@ -180,4 +180,3 @@
 </body>
 
 </html>
-{{arr.3.name}};
