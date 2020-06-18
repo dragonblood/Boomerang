@@ -169,13 +169,15 @@
             </div>
         </div>
     </div>
+    {{arr.3.name|json_script:"things_mentioned"}}
     <script> 
         var sentiment = ["Neutral", "Positive", "Negative"];
         var sentiment_data = {{arr.2}};
-        var things_mentioned = ["Trump", "black-lives-matter", "elephant", "china", "justice"];
-        var mentioned_count = ["4500", "5300", "6250", "7800", "9800"];
+        var things_mentioned = JSON.parse(document.getElementById('things_mentioned').textContent);
+        var mentioned_count = {{arr.3.salience}};
     </script>
     <script src="{% static 'js/script.min.js' %}"></script>
 </body>
 
 </html>
+{{arr.3.name}};
