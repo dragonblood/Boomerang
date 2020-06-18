@@ -34,17 +34,6 @@ def sentiment_api(text):
     sentiment = client.analyze_sentiment(document=document)
 
 
-# def printer(text, sentence):
-#     print('Text: {}\n'.format(text))
-#     print('Overall Sentiment\n')
-#     print('Sentiment Score', sentiment.document_sentiment.score)
-#     print('Sentiment Magnitude', sentiment.document_sentiment.magnitude)
-
-#     for sentence in sentiment.sentences:
-#         print(sentence.text)
-#         print('Sentiment Score',sentence.sentiment.score)
-#         print('Sentiment Magnitude',sentence.sentiment.magnitude)
-
 def Boomerang_analysis(request):
     while sentiment == 0:
         pass
@@ -61,7 +50,6 @@ def Boomerang_analysis(request):
             sentimentTypeCount[0] += 1
 
     arr = [sentiment, text, sentimentTypeCount, entity]
-    print(arr)
     return render(request, 'Analysis.html', {"arr": arr})
 
 def entity_api(text):
