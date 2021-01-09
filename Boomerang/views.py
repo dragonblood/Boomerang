@@ -1,13 +1,9 @@
-from django.http import JsonResponse
 from django.shortcuts import render
-from django.views.generic import View
-from django.http import HttpResponse
 
  # Imports the Google Cloud client library
 from google.cloud import language
 from google.cloud.language import enums
 from google.cloud.language import types
-import argparse
 
 sentiment = 0
 text = 0
