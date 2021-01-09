@@ -44,7 +44,7 @@ def Boomerang_analysis(request):
     for sentence in sentiment.sentences:
         if -0.2 > sentence.sentiment.score:
             sentimentTypeCount[2] += 1
-        elif 0.2 < sentence.sentiment.score:
+        elif sentence.sentiment.score < 0.2:
             sentimentTypeCount[1] += 1
         else:
             sentimentTypeCount[0] += 1
