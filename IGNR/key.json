@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "groovy-vector-276315",
+  "private_key_id": "5dbac9e97e7c960b7769457dab3728bac4d70f03",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCfKpexwSWx4bs0\neunK3gywpcQAZaZCOHm8V/j4iKGZ7GHF999tML9e838kDgtg80Ve/1zzm5+3wEfl\nLwI2F2avQnha5dHuaBrTgasNKKLwBG70/YSNZGkfxPvBBBp2DqQuswqZBVzP3JWD\nGWqM5Tv6J6fExaBpFZJviSfSKLhrDmfWZl09SDDmii6fFU++DOTMEQmSS7zAn56u\nNbowA320I62T+eIRhnrX4NHSDyrbOwx30VwJl3dxUVjbTpgGGmePs2Fl1bJNadUd\nI1U0dv9KNQYXhDHYyiwbkSBLeNKqpIUWez6LRjkV0WIWuXAhW4O4EjIf4D1QzWvY\n32aVoNQvAgMBAAECggEASgK6KtOPPZmjPRHyaHy8Fd/etfiOSLiOEsAtaxPNYQ+D\nn1RVNia2teYvtoo5TEmSdkvz4ur4Z68nPzCOrKxQ+SnFYS8AYQVThAoFicbdjRHi\nrlS8MCsCnt0v216XF1JTkct7IBBYSedeNmm5G+7z5qxN3LewkWyQfQCf3Z9FsbFz\nMMBf0dpZLeOGsg92r5ZfQ3ev60VmAU+51Zo3XvLDVZD4MJL4hw4cfzy1y1z+iImF\nW7p5VE/tC/tLC5XXC9puMWZZ0N0mXHpc6Osz+J65GDBLFfMGqmYJwf8OQR3e4dac\nCW6u77qWJCpRGk9UI9S/eEpXgms6RpZJtl07YY4M4QKBgQDT5LGpNPlpTzFGcE47\nHoRWGFCLbgM19aiyAqQB145MEloZrw0Cm3Z0+Tr2XAUYZlEH2LeVFAwPdCNnQkxc\neuy1TK/2oTMBugYbpZhoaXv02Agid0+n4GFnJXWIxELuH1PCrfSdPhfgO1Dd+W17\ngoRDeLCPaV2hgt47Uy/gjxdCdwKBgQDATDNpxOqrXPlWN6FsO46uxuoDgG1G4ATK\n7BXexuQYpVR1Yxe065k1Y5XwF6S+sJdw5Q/01i7WQY66FEFD8mSI+42hYO3UzWGY\niunccmHMpLw+P929HjkNeZ7swl3USHe9P/7OV5F1YCsnwMCEv4/m8MDZh2S2ozRB\nvOuKIp3yCQKBgQDE4bPqAtzT6s9gIa2u5NYVoRYF17yIALA0Zpu5Um5XZJ3vS2WN\nTKIuYf1VN39MgpU78zPxAuWJ3mGe6k1FiLo0YwME6BcavZw7SAxqx8hzYd99Ftse\nozAdxQKGh8Wgt979/uBQ0ocgxDyJY99Eaas3fgaf2kkzbwPKn6rWvl3gVQKBgBC1\nznXvfbD8eFJMrUNZfZGkiWtaeqSBDQmRMGlWgTW/EDLPNJ0tJ/giukHN3CwR7mcK\nELPm9NT7h2qWHgHIi4H30hvm72PhoQx/bckRS3xcCFukcyFfAfgwzGWokjzDO1x/\ntiW6KFK506Y1ssUWXGvmGewNPuw8DGt1/kXXsj/5AoGAMtTiIoktTbS4mjxFWcyS\ng8pWJBb5pn8yHwUSgdplWcQw0666YYL4OExmKWAg/GqTUILwriWXYYtlT/jLBjFf\njBdsllWPvDoAktD+aGGAf7qU+dbVLHtObLQhL7grjrEqjCyg1vDZ3AU7Vb5OZ0q8\nFX5zsfoYutLb4yT68f/yMs4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "my-natlang-sa@groovy-vector-276315.iam.gserviceaccount.com",
+  "client_id": "101512629497332922716",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/my-natlang-sa%40groovy-vector-276315.iam.gserviceaccount.com"
+}

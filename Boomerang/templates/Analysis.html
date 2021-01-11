@@ -5,11 +5,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <title>Dashboard</title>
+    <title>Project Boomerang</title>
 
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
 
     <link rel="stylesheet" href="{% static 'fonts/fontawesome5-overrides.min.css' %}" />
@@ -19,25 +21,25 @@
             background: #dcdae6;
             color: #353434;
         }
-        
+
         .header-color {
             background: #7f7fd5;
         }
-        
+
         .scroll_row1 {
             max-height: 450px;
             overflow-y: auto;
         }
-        
+
         .scroll_row2 {
             max-height: 375px;
             overflow-y: auto;
         }
-        
+
         .nocurve {
             border-radius: 0px !important;
         }
-        
+
         .card {
             border-color: transparent !important;
         }
@@ -57,7 +59,7 @@
                         <div class="d-sm-flex mb-4">
                             <h1 class="pt-4">Text Analysis Dashboard</h1>
                         </div>
-                    </div><br/>
+                    </div><br />
                     <!-- End: Header -->
                     <!-- Start: PieChart -->
                     <div class="row">
@@ -74,13 +76,13 @@
                                     </div>
                                     <div class="text-center small mt-4">
                                         <span class="mr-2">
-                                          <i class="fa fa-circle text-success"></i>
-                                          &nbsp;Positive</span>
+                                            <i class="fa fa-circle text-success"></i>
+                                            &nbsp;Positive</span>
                                         <span class="mr-2">
-                                          <i class="fa fa-circle text-warning"></i>
+                                            <i class="fa fa-circle text-warning"></i>
                                             &nbsp;Neutral</span>
                                         <span class="mr-2">
-                                          <i class="fa fa-circle text-danger"></i>
+                                            <i class="fa fa-circle text-danger"></i>
                                             &nbsp; Negative</span>
                                     </div>
                                 </div>
@@ -170,11 +172,11 @@
         </div>
     </div>
     {{arr.3.name|json_script:"things_mentioned"}}
-    <script> 
+    <script>
         var sentiment = ["Neutral", "Positive", "Negative"];
-        var sentiment_data = {{arr.2}};
+        var sentiment_data = {{ arr.2}};
         var things_mentioned = JSON.parse(document.getElementById('things_mentioned').textContent);
-        var mentioned_count = {{arr.3.salience}};
+        var mentioned_count = {{ arr.3.salience }};
     </script>
     <script src="{% static 'js/script.min.js' %}"></script>
 </body>

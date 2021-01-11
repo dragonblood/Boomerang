@@ -1,9 +1,13 @@
+from django.http import JsonResponse
 from django.shortcuts import render
+from django.views.generic import View
+from django.http import HttpResponse
 
  # Imports the Google Cloud client library
 from google.cloud import language
 from google.cloud.language import enums
 from google.cloud.language import types
+import argparse
 
 sentiment = 0
 text = 0
@@ -40,7 +44,7 @@ def Boomerang_analysis(request):
     for sentence in sentiment.sentences:
         if -0.2 > sentence.sentiment.score:
             sentimentTypeCount[2] += 1
-        elif sentence.sentiment.score < 0.2:
+        elif 0.2 < sentence.sentiment.score:
             sentimentTypeCount[1] += 1
         else:
             sentimentTypeCount[0] += 1
