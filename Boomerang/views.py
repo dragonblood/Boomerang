@@ -33,7 +33,6 @@ def sentiment_api(text):
     global sentiment
     sentiment = client.analyze_sentiment(document=document)
 
-
 def Boomerang_analysis(request):
     while sentiment == 0:
         pass

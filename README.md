@@ -5,10 +5,21 @@
 
 ## 2. Steps To Follow:
 ```
+### Conda method
 git clone https://github.com/dragonblood/Boomerang.git
 cd Boomerang
-conda env create --file Boomerang.yml
-conda activate Boomerang
+conda env create --file boomerang.yml
+conda activate boomerang
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+```
+### OR (PIP method)
+```
+git clone https://github.com/dragonblood/Boomerang.git
+cd Boomerang
+pipenv shell
+pipenv install
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver

@@ -18,12 +18,13 @@
 
     <style>
         .dashboard {
-            background: #dcdae6;
-            color: #353434;
+            background: #e0e0e0;
+            color: #000000;
+            
         }
 
         .header-color {
-            background: #7f7fd5;
+            background: #ffe699;
         }
 
         .scroll_row1 {
@@ -36,12 +37,8 @@
             overflow-y: auto;
         }
 
-        .nocurve {
-            border-radius: 0px !important;
-        }
-
         .card {
-            border-color: transparent !important;
+            background: linear-gradient(145deg, #f0f0f0);
         }
     </style>
 
@@ -57,7 +54,7 @@
                     <!-- Start: Header -->
                     <div class="card header-color nocurve align-items-center">
                         <div class="d-sm-flex mb-4">
-                            <h1 class="pt-4">Text Analysis Dashboard</h1>
+                            <h1 class="pt-4">Responsive Text Analysis Dashboard</h1>
                         </div>
                     </div><br />
                     <!-- End: Header -->
@@ -134,28 +131,28 @@
                                                 <h6 class="mb-0">
                                                     <strong>{{sentence.text.content}}</strong>
                                                 </h6>
-                                                <span class="text-xs">-</span>
+                                                <span class="text-xs">{{sentence.sentiment.score|truncatechars:6}}</span>
                                             </div>
                                             <div class="col-auto">
 
                                                 {% if -0.2 > sentence.sentiment.score %}
                                                 <div class="card bg-danger text-white shadow">
                                                     <div class="card-body">
-                                                        <p class="m-0">Negative</p>
+                                                        <p class="m-0"> ☹️ </p>
                                                     </div>
                                                 </div>
 
                                                 {% elif 0.2 < sentence.sentiment.score %}
                                                 <div class="card bg-success text-white shadow">
                                                     <div class="card-body">
-                                                        <p class="m-0">Positive</p>
+                                                        <p class="m-0"> 😀 </p>
                                                     </div>
                                                 </div>
 
                                                 {% else %}
                                                 <div class="card bg-warning text-white shadow">
                                                     <div class="card-body">
-                                                        <p class="m-0">Neutral</p>
+                                                        <p class="m-0"> 😐 </p>
                                                     </div>
                                                 </div>
                                                 {% endif %}
