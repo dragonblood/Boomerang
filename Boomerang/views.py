@@ -1,5 +1,5 @@
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.views.generic import View
 from django.http import HttpResponse
 
@@ -20,6 +20,7 @@ def Boomerang_entertext(request):
             text = request.POST.get('text')
             entity_api(text)
             sentiment_api(text)
+            return redirect('Analysis')
     return render(request, 'enterText.html')
 
 def sentiment_api(text):
