@@ -1,4 +1,4 @@
-# Boomerang
+# Boomerang [![Django CI](https://github.com/dragonblood/Boomerang/actions/workflows/django.yml/badge.svg)](https://github.com/dragonblood/Boomerang/actions/workflows/django.yml)
 ## 1. About:
 
 !pending Write about here 
