@@ -24,9 +24,9 @@ CONTENT_DIR = os.path.join(BASE_DIR, 'content')
 SECRET_KEY = 'a1)ad2q(e^btfdg3e9nijv)$#7@g=lbo6mc@#5(1=0-xyt6u^y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*', 'vipulboomerang.herokuapp.com', '127.0.0.1', 'groovy-vector-276315.ue.r.appspot.com', '0.20210111t100532.groovy-vector-276315.ue.r.appspot.com']
+ALLOWED_HOSTS = ['vipulboomerang.herokuapp.com', '127.0.0.1', 'groovy-vector-276315.ue.r.appspot.com']
 
 # SITE_ID = 1
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
