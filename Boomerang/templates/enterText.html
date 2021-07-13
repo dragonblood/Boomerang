@@ -40,7 +40,7 @@
                     {% csrf_token %}
                     <div class="main-textarea">
                         <div class="wrap-input100 validate-input" data-validate="Please enter your message ">
-                            <textarea class="input100" name="text" placeholder="Your Text"></textarea>
+                            <textarea class="input100" name="text"  maxlength="100" placeholder="Your Text (50 characters limit)"></textarea>
                             <span class="focus-input100"></span>
                         </div>
                         <input name="submittext" type="submit" value="Analysis" class="btn yellow rounded">

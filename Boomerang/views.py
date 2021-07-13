@@ -28,7 +28,7 @@ def sentiment_api(text):
     client = language.LanguageServiceClient()
 
     # The text to analyze
-    document = types.Document(content=text, type=enums.Document.Type.PLAIN_TEXT)
+    document = types.Document(content=text[:99], type=enums.Document.Type.PLAIN_TEXT)
 
     # Detects the sentiment of the text
     global sentiment
