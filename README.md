@@ -5,7 +5,7 @@
 [shell_link]: https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dragonblood/Boomerang&page=editor&open_in_editor=README.md
 ## 1. About:
 
-!pending Write about here 
+A Beautifully animated sentiment and Entity responsive analyser. Designed using SCSS, JavaScript. This project is built using Google’s natural language API which processes User-given text and returns a JSON response, which is presented pleasingly using chartsJS to a user. The Project is deployed using Google Cloud AppEngine.
 
 ## 2. Steps To Follow:
 ```
