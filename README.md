@@ -1,4 +1,8 @@
 # Boomerang [![Django CI](https://github.com/dragonblood/Boomerang/actions/workflows/django.yml/badge.svg)](https://github.com/dragonblood/Boomerang/actions/workflows/django.yml)
+[![Open in Cloud Shell][shell_img]][shell_link]
+
+[shell_img]: http://gstatic.com/cloudssh/images/open-btn.png
+[shell_link]: https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dragonblood/Boomerang&page=editor&open_in_editor=README.md
 ## 1. About:
 
 !pending Write about here 
